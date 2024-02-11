@@ -12,7 +12,6 @@ int main (int argc, char* argv[]) {
 	unsigned char x = 0;
 	if (argc == 1) {
 		printf("Enter the number you want a factorial of_ ");
-		scanf("%hhu", &x);
 		while (scanf("%hhu", &x) != 1 || x < 1 || x > 20) {
 			printf("It must be a positive whole number less than 21_ ");
 			__fpurge(stdin);
